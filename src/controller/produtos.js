@@ -5,20 +5,22 @@ const CachorroFile = require('../mock-data/produtos-dog.json')
 module.exports = { 
     
     getProdutos:(req,res)=>{
-        const pet=req.params.animal
+        const pet=req.query.animal
         let produtos
         if(pet==='cachorro'){
-            produtos = CachorroFile.produtos
+            produtos = CachorroFile.produtos.filter((value)=>{
+                return value.nome.toLowerCase().includes(req.query.pesquisa.toLowerCase())
+            })
         }else if(pet==='gato'){
-            produtos = GatoFile.produtos
+            produtos = GatoFile.produtos.filter((value)=>{
+                return value.nome.toLowerCase().includes(req.query.pesquisa.toLowerCase())
+            })
         }
 
-        const produtos_filter = produtos.filter((value)=>{
-            return produtos.nome.toLowerCase().include(req.params.pesquisa.toLowerCase())
-        })
+        
 
         return res.status(200).json({
-            produtos_filter
+            produtos
         })
 
     }
