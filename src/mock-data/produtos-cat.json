@@ -1,0 +1,55 @@
+{
+    "produtos":[
+        {
+            "id":1,
+            "nome": "Shampoo Gato",
+            "preco":50.60
+        },
+        {
+            "id":2,
+            "nome": "Areia",
+            "preco":10.0
+        },
+        {
+            "id":3,
+            "nome": "Brinquedo raspador",
+            "preco":8.0
+        },
+        {
+            "id":4,
+            "nome": "Roupa gato pequeno",
+            "preco":5.00
+        },
+        {
+            "id":5,
+            "nome": "Roupa gato médio",
+            "preco":20.0
+        },
+        {
+            "id":6,
+            "nome": "Coleira Medio",
+            "preco":15.0
+        },
+        {
+            "id":7,
+            "nome": "Coleira Pequeno",
+            "preco":10.00
+        },
+        {
+            "id":8,
+            "nome": "Ração whiskas Pequeno",
+            "preco":100.00
+        },
+        {
+            "id":9,
+            "nome": "Ração whiskas Medio",
+            "preco":100.00
+        },
+        {
+            "id":10,
+            "nome": "Ração whiskas Grande",
+            "preco":100.00
+        }
+        
+    ]
+}
